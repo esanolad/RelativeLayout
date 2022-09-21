@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Google"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_google_hi"
+        android:text="Sign up"
+        android:textSize="50sp"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/ly_google_2"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:background="#D3D3D3"
+        android:alpha="0.3"
+        android:id="@+id/ly_google_2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It looks like you do not have an account"
+            android:id="@+id/lbl_google_do"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's create account for"
+            android:id="@+id/lbl_google_create"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/lbl_google_do"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hemanth@gmail.com"
+            android:id="@+id/lbl_google_email"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/lbl_google_create"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:hint="Email"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/lbl_google_email"
+            android:inputType="textEmailAddress"
+            android:id="@+id/txt_google_email"
+            android:layout_marginBottom="10dp"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:hint="Password"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txt_google_email"
+            android:inputType="textPassword"
+            android:id="@+id/txt_google_pwd"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Continue"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn_google_continue"
+            android:backgroundTint="@color/black"
+            android:layout_below="@+id/txt_google_pwd"
+            />
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
